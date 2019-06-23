@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/scripts/plugin.js"></script>
     <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -52,11 +53,13 @@
                 <div class="row">
                     <div class="col-lg-6 text-center">
                         <div class="card-body bg-dark">
-                            <div class="progress">
-                                <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped"
-                                    style="width: 60%">
-                                </div>
+                            <div class="my-progress-bar">
+                                <script type="text/javascript">var progress_circle = $(".my-progress-bar").gmpc({
+                                        progress_circle.gmpc('animate', 80, 3000);
+                                    })
+                                </script>
                             </div>
+
                             <div class="fa-spin">
                                 <h1 class="display-1"><i class="fas fa-cog text-white"></i></h1>
                             </div>
@@ -64,9 +67,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-center">
-                        <div class="card-body bg-dark">
+                        <div class="p-3 card-body bg-dark">
                             <img src="img/me.JPG" alt="a picture of myself" class="img-fluid d-none d-lg-block">
-                            <h3 class="text-white mt-3">Klaude Dungca</h3>
+                            <div class="mt-2 d-flex flex-row">
+                                <h3 class="text-white">Klaude Dungca</h3>
+                                <div class="ml-auto d-sm-block">
+                                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                                </div>
+                                <div class="d-sm-block">
+                                    <a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
