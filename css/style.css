@@ -56,3 +56,7 @@ body {
  footer a {
     font-size: 110%;
   }
+
+  #nav-item {
+    color: #fff;
+  }
