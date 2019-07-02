@@ -9,21 +9,31 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Poppins' , sans-serif;
 }
 
-#mainheader {
+#main-header {
     position: relative;
-    background: url("../img/science.png");
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    
     background-attachment: fixed;
-
 }
 
-/* Progress Bar*/
+.nav-item {
+  font-size: 1.3rem;
+}
+.primary-overlay:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+/* Progress Bar
 .circular-progress-bar {
     position: relative;
     margin: 0 auto;
@@ -49,7 +59,7 @@ body {
     left: 35%;
     color: #585858;
     font-size: 21px;
-  }
+  } */
 
   /*FOOTER*/
  footer a {

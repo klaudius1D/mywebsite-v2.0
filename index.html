@@ -19,7 +19,8 @@
 
 <body>
     <!-- MAIN NAV -->
-    <nav class="main_nav navbar navbar-expand-sm navbar-light">
+    <nav class="main-nav navbar navbar-expand-md navbar-light py-3">
+
         <div class="container">
             <a href="" class="navbar-brand">KD</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -27,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item border-bottom active">
                         <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -48,37 +49,28 @@
     </nav>
 
     <!-- MAIN HEADER-->
-    <header id="mainheader" class="py-5">
-        <div class="primary-overlay text-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <div class="card-body bg-dark">
-                            <div class="my-progress-bar"></div>
-                            <script type="text/javascript">
-                                var progress_circle = $(".my-progress-bar").gmpc({
-                                    progress_circle.gmpc('animate', 80, 3000);
-                                })
-                            </script>
-
-
-                            <div class="fa-spin">
-                                <h1 class="display-1"><i class="fas fa-cog text-white"></i></h1>
-                            </div>
-                            <h1><i class="fas fa-graduation-cap text-white"></i></h1>
+    <header id="main-header" class="bg-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-5 text-center mr-auto">
+                    <div class="card-body bg-dark">
+                        <div class="my-progress-bar"></div>
+                        <div class="fa-spin">
+                            <h1 class="display-1"><i class="fas fa-cog text-white"></i></h1>
                         </div>
+                        <h1><i class="fas fa-graduation-cap"></i></h1>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <div class="p-3 card-body bg-dark">
-                            <img src="img/me.JPG" alt="a picture of myself" class="img-fluid d-none d-lg-block">
-                            <div class="mt-2 d-flex flex-row">
-                                <h3 class="text-white">Klaude Dungca</h3>
-                                <div class="ml-auto d-sm-block">
-                                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
-                                </div>
-                                <div class="ml-2 d-sm-block">
-                                    <a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a>
-                                </div>
+                </div>
+                <div class="col-sm-6 mt-5 text-center ml-auto">
+                    <div class="p-3 card-body bg-dark">
+                        <img src="img/me.JPG" alt="a picture of myself" class="img-fluid d-none d-lg-block">
+                        <div class="mt-2 d-flex flex-row">
+                            <h3>Klaude Dungca</h3>
+                            <div class="ml-auto d-sm-block">
+                                <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
+                            <div class="ml-2 d-sm-block">
+                                <a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -90,10 +82,13 @@
 
     <!--ABOUT SECTION-->
     <section>
-        <div id="info" class="py-3">
+        <div id="about" class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 align-self-center">
+                    <div class="col-md-4">
+                        <img src="img/uofrlogo.png" alt="uofr" class="img-fluid float-right mt-3">
+                    </div>
+                    <div class="col-md-6">
                         <h3>About</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quidem repellat odit
                             deserunt vero soluta dolores? Amet dolores ipsam quasi facilis obcaecati quis labore harum!
@@ -103,7 +98,7 @@
             </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark">
         <div class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <div class="">
@@ -111,7 +106,7 @@
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                        <li class="nav-item"><a href="blog.html" class="nav-link btn btn-outline-danger"><span><i
+                        <li class="nav-item"><a href="blog.html" class="nav-link btn btn-outline-danger mt-1"><span><i
                                         class="fas fa-file-download"></i></span> Resume</a></li>
                     </ul>
                 </div>
@@ -137,10 +132,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="bg-dark">
+        <div>
             <p class="text-center text-white">Copyright &copy; 2019 pending by Klaudius. All rights reserved.</p>
         </div>
+
+
 
 
     </footer>
