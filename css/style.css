@@ -63,6 +63,14 @@ body {
 #video-play a {
   color: #fff;
 }
+
+.black-icon {
+  color: black;
+}
+
+.carousel-item {
+  border: solid 2px black;
+}
 /* Progress Bar
 .circular-progress-bar {
     position: relative;
