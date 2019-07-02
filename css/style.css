@@ -60,16 +60,12 @@ body {
   color: #fff;
 }
 
-#video-play a {
-  color: #fff;
-}
-
 .black-icon {
   color: black;
 }
 
 .carousel-item {
-  border: solid 2px black;
+  border: solid 1px black;
 }
 /* Progress Bar
 .circular-progress-bar {
