@@ -1,6 +1,5 @@
 
 /*#FF7665 - main color
-
 #842B27 - shade color
 */
 @import url('https://fonts.googleapis.com/css?family=Poppins:300&display=swap');
@@ -27,7 +26,7 @@ body {
 
 #main-heading {
   position: relative;
-  background: url("/mywebsite-v2.0/img/science.png");
+  background: url("../img/science.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
