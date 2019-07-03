@@ -19,8 +19,7 @@
 
 <body>
     <!-- MAIN NAV -->
-    <nav class="main-nav navbar navbar-expand-md navbar-light py-3">
-
+    <nav class="main-nav navbar navbar-expand-md navbar-light py-3 bg-custom">
         <div class="container">
             <a href="#" class="navbar-brand">KD</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -40,40 +39,23 @@
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">Engineering</a>
                             <a href="#" class="dropdown-item">Front-end Development</a>
-                            <a href="#" class="dropdown-item">JavaScript</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- MAIN HEADER-->
-    <header id="main-header" class="bg-danger">
+    <header id="main-header" class="bg-custom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mt-5 text-center mr-auto">
-                    <div class="card-body bg-dark">
-                        <div class="my-progress-bar"></div>
-                        <div class="fa-spin">
-                            <i class="fas fa-cog text-white fa-2x"></i>
-                        </div>
-                        <i class="fas fa-graduation-cap fa-2x"></i>
-                    </div>
+                <div class="col-lg-5 mt-5 text-center m-auto">
+                    <h1>Klaude Dungca</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, libero placeat rerum eveniet
+                        perspiciatis nobis!</p>
                 </div>
-                <div class="col-sm-6 mt-5 text-center ml-auto">
-                    <div class="p-3 card-body bg-dark">
-                        <img src="img/me.JPG" alt="a picture of myself" class="img-fluid d-none d-sm-block">
-                        <div class="mt-2 d-flex flex-row">
-                            <h3>Klaude Dungca</h3>
-                            <div class="ml-auto d-sm-block">
-                                <a href="#main-" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
-                            </div>
-                            <div class="ml-2 d-sm-block">
-                                <a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-7 mt-5 text-center ml-auto">
+                    <img src="img/me.JPG" alt="a picture of myself" class="img-fluid shadow-lg">
                 </div>
             </div>
         </div>
@@ -86,7 +68,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="img/uofrlogo.png" alt="uofr" class="img-fluid float-right d-flex">
+                        <img src="img/uofrlogo.png" alt="uofr" class="img-fluid  ml-auto pt-4 d-none d-md-block">
                     </div>
                     <div class="col-md-6 align-self-center">
                         <h3 class="border-bottom">About</h3>
@@ -100,7 +82,7 @@
 
 
     <!--PROJECTS HEADING SECTION-->
-    <section id="project-heading" class="p-4">
+    <section id="main-heading" class="p-4">
         <div class="dark-overlay">
             <div class="row">
                 <div class="col">
@@ -114,17 +96,17 @@
 
     <!--PROJECTS SECTION-->
     <!--ENGINEERING-->
-    <section id="main">
-        <div id="info" class="mt-5">
+    <section id="main-section" class="m-5">
+        <div id="info" class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mt-3">
-                        <h4 class="border-bottom">Rube Goldberg Machine</h4>
+                    <div class="col-md-5 mt-3">
+                        <h3 class="border-bottom">Rube Goldberg Machine</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit quasi hic accusamus quas
                             vel
                             fuga reiciendis explicabo aliquid ipsam.</p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-7  d-none d-md-block">
                         <div id="video-play">
                             <div class="container">
                                 <a href="#main-" clas="video" data-video="https://www.youtube.com/embed/Nu1ZzvNppIE"
@@ -155,13 +137,13 @@
         <!-- SLIDER WITH INDICATORS -->
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-4 order-2 mt-3">
-                    <h4 class="border-bottom">Front End Development</h4>
+                <div class="col-md-5 order-2 mt-3">
+                    <h3 class="border-bottom">Front End Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit quasi hic accusamus quas
                         vel
                         fuga reiciendis explicabo aliquid ipsam.</p>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 d-none d-md-block">
                     <div id="main-slider" class="carousel slide mb-5" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li class="active" data-target="#main-slider" data-slide-to="0"></li>
@@ -209,7 +191,7 @@
 
     <!--CONTACT SECTION-->
     <!--CONTACT HEADING SECTION-->
-    <section id="project-heading" class="p-4">
+    <section id="main-heading" class="p-4">
         <div class="dark-overlay">
             <div class="row">
                 <div class="col">
@@ -222,31 +204,28 @@
     </section>
 
     <!--CONTACT FORM-->
-    <section id="contact" class="py-5">
+    <section id="main-section" class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-1">
                     <div class="card border-danger p-3">
                         <div class="card-body">
-                            <h2>Get In Touch</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action"><i
-                                            class="fas fa-envelope"></i>
-                                        Gmail</a>
-                                    <a href="https://www.linkedin.com/in/klaude-dungca-1a73a0168/"
-                                        class="list-group-item list-group-item-action"><i class="fab fa-linkedin"></i>
-                                        LinkedIn</a>
-                                    <a href="https://github.com/klaudius1D"
-                                        class="list-group-item list-group-item-action"><i class="fab fa-github"></i>
-                                        GitHub</a>
-                                    <a href="#" class="list-group-item list-group-item-action"><i
-                                            class="fab fa-facebook"></i>
-                                        Facebook</a>
-                                    <a href="https://www.instagram.com/klaudedungca/"
-                                        class="list-group-item list-group-item-action"><i class="fab fa-instagram"></i>
-                                        Instagram</a>
-                                </div>
+                            <h3 class="border-bottom">Get In Touch</h3>
+                            <p>Please send a suggestion my way & I'll get back to you soon!</p>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action"><i
+                                        class="fab fa-facebook"></i>
+                                    Facebook</a>
+                                <a href="https://www.instagram.com/klaudedungca/"
+                                    class="list-group-item list-group-item-action"><i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                                <a href="https://www.linkedin.com/in/klaude-dungca-1a73a0168/"
+                                    class="list-group-item list-group-item-action"><i class="fab fa-linkedin"></i>
+                                    LinkedIn</a>
+                                <a href="https://github.com/klaudius1D"
+                                    class="list-group-item list-group-item-action"><i class="fab fa-github"></i>
+                                    GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,14 +234,13 @@
                         <div class="card-body">
                             <form id="gform" method="POST" class="" data-email="klaude.dungca@gmail.com"
                                 action="https://script.google.com/macros/s/AKfycbwE0KAjDN38UR6jmxU1qRysanP_gJi3BB8jM22-/exec">
-
                                 <label for="name" class="input-group input-group-lg mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">
                                             <i class="fa fa-user"></i>
                                         </span>
                                     </div>
-                                    <input type="text" id="name" class="form-control" placeholder="Name">
+                                    <input required type="text" id="name" class="form-control" placeholder="Name">
                                 </label>
                                 <label for="email" class="input-group input-group-lg mb-3">
                                     <div class="input-group-prepend">
@@ -270,7 +248,7 @@
                                             <i class="fa fa-envelope"></i>
                                         </span>
                                     </div>
-                                    <input id="email" name="email" type="email" class="form-control"
+                                    <input required id="email" name="email" type="email" class="form-control"
                                         placeholder="Email">
                                 </label>
                                 <label for="message" class="input-group input-group-lg mb-3">
@@ -279,8 +257,8 @@
                                             <i class="fa fa-pencil-alt"></i>
                                         </span>
                                     </div>
-                                    <textarea id="message" name="message" type="text" class="form-control" rows="5"
-                                        placeholder="Input text"></textarea>
+                                    <textarea required id="message" name="message" type="text" class="form-control"
+                                        rows="5" placeholder="Enter Text"></textarea>
                                 </label>
                                 <input type="submit" value="Submit" class="btn btn-danger btn-lg btn-block">
                             </form>
@@ -290,7 +268,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- FOOTER -->
     <footer class="bg-dark">
