@@ -253,32 +253,35 @@
                 <div class="col-md-8">
                     <div class="card border-danger p-3">
                         <div class="card-body">
-                            <form class="">
-                                <div class="input-group input-group-lg mb-3">
+                            <form id="gform" method="POST" class="" data-email="klaude.dungca@gmail.com"
+                                action="https://script.google.com/macros/s/AKfycbwE0KAjDN38UR6jmxU1qRysanP_gJi3BB8jM22-/exec">
+
+                                <label for="name" class="input-group input-group-lg mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">
                                             <i class="fa fa-user"></i>
                                         </span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="input-group input-group-lg mb-3">
+                                    <input type="text" id="name" class="form-control" placeholder="Name">
+                                </label>
+                                <label for="email" class="input-group input-group-lg mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">
                                             <i class="fa fa-envelope"></i>
                                         </span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="input-group input-group-lg mb-3">
+                                    <input id="email" name="email" type="email" class="form-control"
+                                        placeholder="Email">
+                                </label>
+                                <label for="message" class="input-group input-group-lg mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">
                                             <i class="fa fa-pencil-alt"></i>
                                         </span>
                                     </div>
-                                    <textarea type="text" class="form-control" rows="5"
+                                    <textarea id="message" name="message" type="text" class="form-control" rows="5"
                                         placeholder="Input text"></textarea>
-                                </div>
+                                </label>
                                 <input type="submit" value="Submit" class="btn btn-danger btn-lg btn-block">
                             </form>
                         </div>
@@ -345,8 +348,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 <script src="/mywebsite-v2.0/js/script.js"></script>
 <script src="vendors/scripts/plugin.js"></script>
+
+
 
 </body>
 
