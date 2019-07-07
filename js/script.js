@@ -3,7 +3,7 @@ $('#year').text(new Date().getFullYear());
 
 //slider configuration
 $('.carousel').carousel({
-    interval: 6000,
+    interval: 5000,
     pause: 'hover'
 
 });
@@ -22,15 +22,6 @@ $(function () {
     });
 });
 
-//lightbox plugin by ashleydw https://ashleydw.github.io/lightbox/
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
+//Animate on scroll
+AOS.init();
 
-/* Slick Slider
-$('.slider').slick({
-    infinite: true,
-    slideToShow: 1,
-    slideToScroll: 1
-}); */
