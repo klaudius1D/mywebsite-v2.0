@@ -25,16 +25,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="top-nav">
                     <li class="nav-item">
-                        <a href="#main-header" class="pl-1 nav-link nav-menu ">
+                        <a href="#main-header" class="pl-1 nav-link nav-menu">
                             Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="pl-1 nav-link nav-menu "> About</a>
+                        <a href="#about" class="pl-1 nav-link nav-menu"> About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="pl-1 nav-link nav-menu "> Projects</a>
+                        <a href="#projects" class="pl-1 nav-link nav-menu"> Projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="pl-1 nav-link nav-menu"> Contact</a>
@@ -55,10 +55,10 @@
                     <img src="img/me.JPG" alt="a picture of myself" class="img-fluid">
                 </div>
                 <div class="ml-auto pt-3 pr-3">
-                    <a href="https://github.com/klaudius1D" class="btn btn-danger rounded-circle"><i
+                    <a href="https://github.com/klaudius1D" class="btn btn-dark rounded-circle"><i
                             class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/klaude-dungca-1a73a0168/"
-                        class="btn btn-danger rounded-circle"><i class="fab fa-linkedin"></i></a>
+                        class="btn btn-dark rounded-circle"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -84,14 +84,17 @@
                             Regina. I plan to convocate in the Spring of 2022 with
                             specializations
                             in Communications and Power. But before that, I plan to obtain work experience
-                            through a 12-month Co-op Internship position starting in the Fall of 2020.</p>
+                            through a 12-month Internship starting in the Fall of 2020.</p>
 
-                        <p>I have a passion for technology which motivated me to obtain a student council
+                        <span>I have a passion for technology which motivated me to obtain a student council
                             position at U
                             of R's IEEE Student Branch as a Website & Lounge Director. I am highly motivated when it
                             comes to applying the
-                            knowledge and skills I learn at University in a practical manner. Below are some of the
-                            projects I've done in my academic career and during my spare time.</p>
+                            knowledge and skills I learn from University in a practical manner.</p>
+                            <span class="d-none d-md-inline-flex">
+                                Below are some of
+                                the
+                                projects I've done in my academic career and during my spare time.</span>
                     </div>
                 </div>
             </div>
@@ -118,6 +121,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
+                        <p class="text-muted font-italic d-md-none">*Please see desktop version to view projects*</p>
                         <h3 class="border-bottom">Rube Goldberg Machine</h3>
                         <p>This is a machine made up of several devices chained together to produce an outcome. In our
                             case, to catch fish when ice fishing. It was my first major group project in Engineering.
@@ -155,9 +159,10 @@
             </div>
         </div>
 
+        <hr>
         <!--FRONT-END-->
         <!-- SLIDER WITH INDICATORS -->
-        <div class="container pt-5">
+        <div class="container pt-2">
             <div class="row">
                 <div class="col-md-5 order-2">
                     <h3 class="border-bottom">Front End Development</h3>
@@ -219,7 +224,7 @@
                         </a>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-sm-6">
                             <h5>Languages</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fab fa-html5"></i> HTML5</li>
@@ -227,7 +232,7 @@
                                 <li><i class="fab fa-js-square"></i> JavaScript</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-6">
                             <h5>Frameworks & Libraries</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fab fa-bootstrap"></i> Bootstrap 4</li>
@@ -256,10 +261,10 @@
     </section>
 
     <!--CONTACT FORM-->
-    <section class="py-5 bg-light">
+    <section class="contact-sec py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-1 my-5">
+                <div class="col-md-4 mb-1 my-5 d-none d-sm-block">
                     <div class="card border-danger p-3">
                         <div class="card-body">
                             <h3 class="border-bottom">Get In Touch</h3>
@@ -281,9 +286,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 my-5">
+                <div class="col-md-8 my-5" id="contact">
                     <div class="card border-danger p-3">
                         <div class="card-body">
+                            <div class="d-sm-none">
+                                <h3 class="border-bottom">Get In Touch</h3>
+                                <p>Please send me a message. I'll be sure to get back to you.</p>
+                            </div>
                             <form id="gform" method="POST" class="" data-email="klaude.dungca@gmail.com"
                                 action="https://script.google.com/macros/s/AKfycbwE0KAjDN38UR6jmxU1qRysanP_gJi3BB8jM22-/exec">
                                 <label for="name" class="input-group input-group-lg mb-3">
@@ -323,38 +332,44 @@
 
     <!-- FOOTER -->
     <footer class="bg-dark">
-        <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="navbar navbar-expand navbar-dark bg-dark">
             <div class="container">
-                <div class="">
-                    <ul class="navbar-nav" id="footer-nav1">
-                        <li class="nav-item"><a class="nav-link" href="#main-header">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link btn btn-outline-danger mt-1"><span><i
-                                        class="fas fa-file-download"></i></span> Resume</a></li>
-                    </ul>
+                <div class="row">
+                    <p class="d-md-none m-auto text-white"> &copy; Klaudius 2019</p>
+                    <div class="d-none d-md-block">
+                        <ul class="navbar-nav" id="footer-nav1">
+                            <li class="nav-item"><a class="nav-link" href="#main-header">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link btn btn-outline-danger mt-1"><i
+                                        class="fas fa-file-download"></i> Resume</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link"
-                                href="https://www.linkedin.com/in/klaude-dungca-1a73a0168/">
-                                <i class="fab fa-linkedin fa-2x"></i>
+                <div class="row">
+                    <div class="m-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://www.linkedin.com/in/klaude-dungca-1a73a0168/">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/klaudedungca/">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a></li>
                             </a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/klaudedungca/">
-                                <i class="fab fa-instagram fa-2x"></i>
+                            <li class="nav-item"><a class="nav-link" href="https://github.com/klaudius1D">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a></li>
                             </a></li>
-                        </a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://github.com/klaudius1D">
-                                <i class="fab fa-github fa-2x"></i>
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/kbcruzd">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a></li>
                             </a></li>
-                        </a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/kbcruzd">
-                                <i class="fab fa-facebook fa-2x"></i>
-                            </a></li>
-                        </a></li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 </body>
